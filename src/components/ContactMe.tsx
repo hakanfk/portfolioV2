@@ -11,17 +11,17 @@ function ContactMe({}: Props) {
         <div className=" flex flex-col gap-y-4 justify-center items-start">
           <input
             type="text"
-            className="lg:bg-gray-200 bg-gray-50 relative transition-all duration-200 appearance-none focus:outline-none pl-2 pr-32  md:pr-48 py-2 rounded-md focus:bg-white focus:border-2 focus:border-black/70"
+            className="lg:bg-gray-200 bg-gray-50 relative transition-all duration-200 appearance-none focus:outline-none pl-2 pr-24  md:pr-48 py-2 rounded-md focus:bg-white focus:border-2 focus:border-black/70"
             placeholder="Name"
           />
           <input
             type="text"
-            className="lg:bg-gray-200 bg-gray-50 relative transition-all duration-200 appearance-none focus:outline-none pl-2  pr-32 md:pr-48 py-2 rounded-md focus:bg-white focus:border-2 focus:border-black/70"
+            className="lg:bg-gray-200 bg-gray-50 relative transition-all duration-200 appearance-none focus:outline-none pl-2  pr-24 md:pr-48 py-2 rounded-md focus:bg-white focus:border-2 focus:border-black/70"
             placeholder="Mail"
             required
           />
           <textarea
-            className="lg:bg-gray-200 bg-gray-50 relative transition-all duration-200 appearance-none focus:outline-none pl-2 pr-32  md:pr-[12rem] py-2 rounded-md focus:bg-white focus:border-2 focus:border-black/70"
+            className="lg:bg-gray-200 bg-gray-50 relative transition-all duration-200 appearance-none focus:outline-none pl-2 pr-24  md:pr-[12rem] py-2 rounded-md focus:bg-white focus:border-2 focus:border-black/70"
             placeholder="Message"
             rows={5}
           />

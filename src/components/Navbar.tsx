@@ -39,7 +39,7 @@ function Navbar({}: Props) {
   const [mobilMenu, setMobilMenu] = useState(false);
 
   return (
-    <header className="w-full fixed top-0 left-0 backdrop-blur-md z-50 lg:px-16 px-8 py-6 font-medium">
+    <header className="w-full fixed top-0 left-0 backdrop-blur-md z-50 lg:px-16 px-8 py-4 md:py-6 font-medium">
       <div className="flex flex-row justify-between  ">
         {/* 
           Logo
