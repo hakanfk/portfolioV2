@@ -49,7 +49,7 @@ function Projects({}: Props) {
                   <p className="text-start text-sm opacity/80 mt-1">
                     {" "}
                     Netflix Clone developed with React, TypeScript, React-Redux,
-                    TailwindCss and NextJs. For now it's just a frontend
+                    TailwindCss and NextJs. For now it is just a frontend
                     version. Full-Stack version will be released soon{" "}
                   </p>
                   <div className="flex flex-row mt-2 gap-x-3 ">

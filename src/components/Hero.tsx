@@ -10,19 +10,20 @@ type Props = {};
 function Hero({}: Props) {
   return (
     <div className="h-[100vh] overflow-hidden w-full px-8 justify-center items-center flex-col  flex">
-      <Navbar />
+      <Navbar href="" title="" />
       <div className=" px-2 md:px-4 md:gap-x-4 lg:gap-x-12 flex flex-row justify-center items-center">
         <div className="w-[90%] mx-auto md:w-3/5 md:mx-0 text-center md:text-start">
           <motion.h2 className="uppercase text-6xl  ">
-            Hi, I'm Furkan Hakan
+            Hi, I am Furkan Hakan
           </motion.h2>
           <h2 className="text-4xl opacity-80 mt-3">
             Frontend and Mobile Developer
           </h2>
           <p className="mt-3">
-            Crafting cool website interfaces and building handy mobile apps, I'm
-            your go-to developer for all things frontend and mobile - bridging
-            the gap between tech and usability, one line of code at a time!
+            Crafting cool website interfaces and building handy mobile apps, I
+            am your go-to developer for all things frontend and mobile -
+            bridging the gap between tech and usability, one line of code at a
+            time!
           </p>
           <div className="flex justify-center  md:mx-0 w-full flex-row mt-4 md:justify-start items-center gap-x-6">
             <Link

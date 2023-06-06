@@ -6,7 +6,6 @@ import Link from "next/link";
 import Band from "@/components/Band";
 import Projects from "@/components/Projects";
 import Hero from "@/components/Hero";
-import Contact from "./contact/page";
 import ContactMe from "@/components/ContactMe";
 import Skills from "@/components/Skills";
 
