@@ -110,9 +110,30 @@ function Navbar({}: Props) {
                 </Link>
                 <hr className="w-full h-[2px] bg-gray-200" />
                 <div className="flex flex-row gap-x-6 px-2">
-                  <AiFillLinkedin size={36} />
-                  <AiFillTwitterCircle size={36} />
-                  <AiFillGithub size={36} />
+                  <Link
+                    href="https://www.linkedin.com/in/furkan-hakan-karaaslan-782910172/"
+                    target="_blank"
+                  >
+                    <AiFillLinkedin
+                      size={36}
+                      className="cursor-pointer hover:scale-110 transition-all duration-200"
+                    />
+                  </Link>
+                  <Link href="https://twitter.com/Frtr133" target="_blank">
+                    <AiFillTwitterCircle
+                      size={36}
+                      className="cursor-pointer hover:scale-110 transition-all duration-200"
+                    />
+                  </Link>
+                  <Link
+                    href="https://github.com/hakanfk?tab=repositories"
+                    target="_blank"
+                  >
+                    <AiFillGithub
+                      size={36}
+                      className="cursor-pointer hover:scale-110 transition-all duration-200"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -133,18 +154,30 @@ function Navbar({}: Props) {
           Social Media
         */}
         <div className="hidden md:flex flex-row gap-x-6">
-          <AiFillLinkedin
-            size={28}
-            className="cursor-pointer hover:scale-110 transition-all duration-200"
-          />
-          <AiFillTwitterCircle
-            size={28}
-            className="cursor-pointer hover:scale-110 transition-all duration-200"
-          />
-          <AiFillGithub
-            size={28}
-            className="cursor-pointer hover:scale-110 transition-all duration-200"
-          />
+          <Link
+            href="https://www.linkedin.com/in/furkan-hakan-karaaslan-782910172/"
+            target="_blank"
+          >
+            <AiFillLinkedin
+              size={28}
+              className="cursor-pointer hover:scale-110 transition-all duration-200"
+            />
+          </Link>
+          <Link href="https://twitter.com/Frtr133" target="_blank">
+            <AiFillTwitterCircle
+              size={28}
+              className="cursor-pointer hover:scale-110 transition-all duration-200"
+            />
+          </Link>
+          <Link
+            href="https://github.com/hakanfk?tab=repositories"
+            target="_blank"
+          >
+            <AiFillGithub
+              size={28}
+              className="cursor-pointer hover:scale-110 transition-all duration-200"
+            />
+          </Link>
         </div>
       </div>
     </header>
