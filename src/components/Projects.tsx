@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import image1 from "../../public/discord.png";
-import image2 from "../../public/discord2.png";
-import image3 from "../../public/google.png";
-import image4 from "../../public/netflix.png";
+import image1 from "../../public/NetflixProject.png";
+import image2 from "../../public/shopProject.png";
+import image3 from "../../public/metaverseProject.png";
+import image4 from "../../public/flightApp.png";
+import image5 from "../../public/wardrobeProject.png";
+import image6 from "../../public/oldPortfolio.png";
 import Link from "next/link";
 import { BiLinkExternal } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
@@ -12,11 +14,46 @@ import { AiFillCloseCircle } from "react-icons/ai";
 
 type Props = {};
 
-const images = [image1, image2, image3, image4, image2, image4];
+const images = [
+  {
+    src: image1,
+    title: "Netflix-Clone",
+    tech: "TypeScript, Redux, Tailwind, Axios,",
+    link: "https://github.com/hakanfk/Netflix-CloneV2",
+  },
+  {
+    src: image2,
+    title: "Basic Shop Website",
+    tech: "TypeScript, Redux, Tailwind, Axios,",
+    link: "https://github.com/hakanfk/Basic-Shop-Website",
+  },
+  {
+    src: image3,
+    title: "Metaverse Website",
+    tech: "TypeScript, Redux, Tailwind, Axios, Framer Motion, ThreeJS",
+    link: "https://github.com/hakanfk/Metaverse-Website",
+  },
+  /* {
+    src: image4,
+    title: "Mobile Flight App",
+  },
+  {
+    src: image5,
+    title: "Mobile Wardrobe App",
+  }, */
+  {
+    src: image6,
+    title: "Old-Portfolio",
+    tech: "JavaScript, Tailwind, Framer Motion, Vite ",
+    link: "https://github.com/hakanfk/Portfolio",
+  },
+];
 
 function Projects({}: Props) {
   const [openModal, setOpenModal] = useState(false);
   const [modalImage, setModalImage] = useState<any>(null);
+  const [tech, setTech] = useState("");
+  const [link, setLink] = useState("");
 
   useEffect(() => {}, []);
 
@@ -40,24 +77,24 @@ function Projects({}: Props) {
                 <AiFillCloseCircle className="w-10 h-10 hover:scale-105 transition-all duration-300" />
               </h2>
               <div className="relative">
-                <Image src={modalImage} alt="" className="w-full " />
+                <Image
+                  src={modalImage}
+                  alt=""
+                  className="w-[48rem] object-contain  "
+                />
                 <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-b from-transparent to-gray-200 " />
               </div>
               <div className="flex flex-col md:flex-row w-full ">
                 <div className="flex flex-col px-2 py-2 justify-start items-start flex-[2] ">
                   <h2 className="text-lg tracking-wide mt-1">Netflix-Clone</h2>
-                  <p className="text-start text-sm opacity/80 mt-1">
-                    {" "}
-                    Netflix Clone developed with React, TypeScript, React-Redux,
-                    TailwindCss and NextJs. For now it is just a frontend
-                    version. Full-Stack version will be released soon{" "}
-                  </p>
+                  <p className="text-start text-base opacity/80 mt-1">{tech}</p>
                   <div className="flex flex-row mt-2 gap-x-3 ">
                     <div className="p-1 justify-start items-center flex flex-row group relative cursor-pointer rounded-md border-emerald-400 border-[3px] ">
                       <div className="absolute group-hover:w-full cursor-pointer ease-in-out  w-0 bg-emerald-400 transition-all duration-300 h-full top-0 left-0" />
                       <Link
                         className="text-gray-700 group-hover:text-white font-semibold z-10 relative"
-                        href=""
+                        href={link}
+                        target="_blank"
                       >
                         Live Demo
                       </Link>
@@ -67,7 +104,8 @@ function Projects({}: Props) {
                       <div className="absolute group-hover:w-full cursor-pointer ease-in-out  w-0 bg-black transition-all duration-300 h-full top-0 left-0" />
                       <Link
                         className="text-black font-semibold group-hover:text-white z-10 relative"
-                        href=""
+                        href={link}
+                        target="_blank"
                       >
                         Code
                       </Link>
@@ -75,9 +113,9 @@ function Projects({}: Props) {
                     </div>
                   </div>
                 </div>
-                <div className="flex-[1] px-2  py-2 w-full justify-start flex md:justify-end ">
+                {/*  <div className="flex-[1] px-2  py-2 w-full justify-start flex md:justify-end ">
                   <h2>Tech Stack:</h2>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -91,15 +129,17 @@ function Projects({}: Props) {
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <h2 className="mb-1 font-semibold text-lg">Netflix-Clone</h2>
+              <h2 className="mb-1 font-semibold text-lg"> {item.title} </h2>
               <Image
                 onClick={() => {
-                  setModalImage(item);
+                  setModalImage(item.src);
+                  setTech(item.tech);
+                  setLink(item.link);
                   setOpenModal(true);
                 }}
                 alt=""
-                src={item}
-                className="w-96 group-hover:scale-95 hover:!z-10 hover:!scale-105 cursor-pointer transition-all duration-300"
+                src={item.src}
+                className="w-96 h-48 object-cover group-hover:scale-95 hover:!z-10 hover:!scale-105 cursor-pointer transition-all duration-300"
               />
             </div>
           );
