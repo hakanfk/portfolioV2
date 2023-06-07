@@ -27,7 +27,7 @@ function Hero({}: Props) {
           </p>
           <div className="flex justify-center  md:mx-0 w-full flex-row mt-4 md:justify-start items-center gap-x-6">
             <Link
-              href="/dummy.pdf"
+              href="/moiCV.pdf"
               className="w-36 h-10 bg-black rounded-md text-center text-white justify-start pl-4 items-center flex text-lg font-medium hover:bg-neutral-500 transition-all duration-500"
               target="_blank"
               download={true}
@@ -35,7 +35,7 @@ function Hero({}: Props) {
               Resume <BsDownload className="w-7 ml-2" />
             </Link>
             <Link
-              href="mailto:novictim40@gmail.com"
+              href="#contact"
               className="w-36 h-10 bg-neutral-200 hover:scale-105 hover:underline transition-all duration-300 rounded-md flex justify-start pl-4 items-center"
             >
               Contact{" "}
