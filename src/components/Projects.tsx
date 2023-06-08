@@ -137,7 +137,7 @@ function Projects({}: Props) {
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <h2 className="md:mb-1 -mb-14 font-semibold text-lg text-center">
+              <h2 className="md:mb-1 -mb-14 font-semibold text-base md:text-lg text-center">
                 {" "}
                 {item.title}{" "}
               </h2>
