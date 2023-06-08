@@ -12,7 +12,7 @@ function Skills({}: Props) {
           <h2 className="text-5xl tracking-widest">My Skills </h2>
         </div>
         <div className="flex-[1] w-full hover:bg-red-400/20 bg-red-400 flex justify-center items-center text-2xl tracking-wide font-base cursor-pointer relative group hover:flex-[4] transition-all duration-300 hover:items-start pt-3 ">
-          <h2 className="">Web Design</h2>
+          <h2 className="">Frontend</h2>
           <div className="hidden absolute lg:top-24 top-12 place-items-center gap-x-3 gap-y-4 group-hover:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             <SkillCard title="React" color="bg-red-400" />
             <SkillCard title="NextJs" color="bg-red-400" />
@@ -29,7 +29,8 @@ function Skills({}: Props) {
             <SkillCard title="NativeWind" color="bg-emerald-400" />
             <SkillCard title="Redux" color="bg-emerald-400" />
             <SkillCard title="Expo" color="bg-emerald-400" />
-            <SkillCard title="Navigation" color="bg-emerald-400" />
+            <SkillCard title="React Navigation" color="bg-emerald-400" />
+            <SkillCard title="Android Studio" color="bg-emerald-400" />
           </div>
         </div>
         <div className="flex-[1] w-full hover:bg-yellow-400/20 bg-yellow-400 flex justify-center items-center text-2xl tracking-wide font-base cursor-pointer relative group hover:flex-[4] transition-all duration-300 hover:items-start pt-3 ">
