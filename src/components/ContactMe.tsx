@@ -35,7 +35,7 @@ function ContactMe({}: Props) {
   return (
     <div className="h-[100vh] w-full relative flex flex-row justify-center items-center">
       <div className="flex-[1]  md:px-0 flex flex-col gap-y-6 justify-center items-center">
-        <h2 className="text-3xl">Contact Us</h2>
+        <h2 className="text-3xl">Contact Me</h2>
         <form
           ref={form}
           onSubmit={sendEmail}
