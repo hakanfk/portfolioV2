@@ -130,14 +130,14 @@ function Projects({}: Props) {
         </div>
       )}
 
-      <div className="md:grid-cols-3 transition-all duration-300 group grid gap-x-2 grid-cols-2  h-full py-6">
+      <div className="md:grid-cols-3 transition-all duration-300 group grid gap-x-2 grid-cols-2  h-full py-0 md:py-6">
         {images.map((item, index) => {
           return (
             <div
               key={index}
               className="flex flex-col justify-center items-center"
             >
-              <h2 className="mb-1 font-semibold text-lg text-center">
+              <h2 className="md:mb-1 -mb-14 font-semibold text-lg text-center">
                 {" "}
                 {item.title}{" "}
               </h2>
@@ -151,7 +151,7 @@ function Projects({}: Props) {
                 }}
                 alt=""
                 src={item.src}
-                className="w-96 h-48 object-cover group-hover:scale-95 hover:!z-10 hover:!scale-105 cursor-pointer transition-all duration-300"
+                className="w-96 h-48 object-contain group-hover:scale-95 hover:!z-10 hover:!scale-105 cursor-pointer transition-all duration-300"
               />
             </div>
           );
